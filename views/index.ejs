@@ -169,49 +169,28 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
+            <div class="about-containers project-about-containers">
+                     
+                <% if (GITHUB_REPOS && GITHUB_REPOS.length !== 0 && GITHUB_REPOS !== undefined) { %>
+                    <% GITHUB_REPOS.forEach(data => { %>
+                    <div class="details-container color-container projects-details">
+                        <div class="article-container">
+                        </div>
+                        <h2 class="experience-sub-title project-title"><%= data.name %></h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='<%= data.html_url %>'">
+                                Github
+                            </button>
+                            <% if (data.homepage != null) { %>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='<%= data.homepage %>'">
+                                Live Demo
+                            </button>
+                            <% } %>
+                        </div>
+                    </div>
+                    <% }); %>
+                <% } %>
 
-                <%
-                    const username = "Demir051";  
-                    const token = GITHUB_TOKEN; 
-                    console.log("token : ", token);
-
-                    const apiUrl = `https://api.github.com/users/${username}/repos`;
-
-                    fetch(apiUrl, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    })
-                    .then((response) => response.json())
-                    .then((data) => { %>
-                                
-                                    <% data.forEach(element => { %>
-                                    <div class="details-container color-container">
-                                        <div class="article-container">
-                                        </div>
-                                        <h2 class="experience-sub-title project-title"><%= element.name %></h2>
-                                        <div class="btn-container">
-                                            <button class="btn btn-color-2 project-btn"
-                                                onclick="location.href='<%= element.html_url %>'">
-                                                Github
-                                            </button>
-                                            <% if (element.homepage != null) { %>
-                                            <button class="btn btn-color-2 project-btn"
-                                                onclick="location.href='<%= element.homepage %>'">
-                                                Live Demo
-                                            </button>
-                                            <% } %>
-                                        </div>
-                                    </div>
-                                    <% }); %>
-                                
-                                <% })
-                    .catch((error) => {
-                        console.error("API isteği başarısız oldu:", error);
-                    });
-                %>
-                
             </div>
         </div>
         <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
