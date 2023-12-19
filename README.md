@@ -22,7 +22,7 @@ Bu proje, kendi portföy web sitenizi oluşturmanıza yardımcı olacak basit bi
     npm install
     ```
 
-4. Çevresel değişkenleri ayarlayın. `.env.sample` dosyasını `.env` olarak kopyalayın ve GitHub token'ınızı ve diğer çevresel değişkenleri ekleyin.
+4. `.env` dosyası oluşturun ve GitHub token'ınızı ve diğer çevresel değişkenleri ekleyin.
 
 5. Uygulamayı başlatın:
 
@@ -44,3 +44,7 @@ Bu proje, kendi portföy web sitenizi oluşturmanıza yardımcı olacak basit bi
 - EJS (Embedded JavaScript) şablon motoru
 - CSS
 - Node.js
+
+## Kullanılan Api
+
+- Github API 
