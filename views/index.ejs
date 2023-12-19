@@ -72,13 +72,9 @@
             <div class="about-details-container">
                 <div class="text-container">
                     <p>
-                        As a Backend Developer, I focus on utilizing my coding skills to optimize business processes and
-                        enhance
-                        data management. My passion for learning new technologies and improving existing systems
-                        demonstrates my
-                        commitment to continuous self-improvement. I take pride in contributing to the successful
-                        completion of
-                        projects through my effective communication skills within the team.
+                        Hi 👋, I am <b>Ahmet Demir</b>. As a <b>Computer Programming</b> student, I deepen my passion and curiosity
+                        for coding day by day. I aim to keep up with innovations in the industry by constantly <b>focusing</b>
+                        on <b>discovering</b> new technologies and improving myself in projects.
                     </p>
                 </div>
             </div>
@@ -175,7 +171,7 @@
         <div class="experience-details-container">
             <div class="about-containers">
 
-                <% 
+                <%
                     const username = "Demir051";  
                     const token = GITHUB_TOKEN; 
                     console.log("token : ", token);
@@ -189,7 +185,7 @@
                     })
                     .then((response) => response.json())
                     .then((data) => { %>
-                                <div class="about-containers">
+                                
                                     <% data.forEach(element => { %>
                                     <div class="details-container color-container">
                                         <div class="article-container">
@@ -209,7 +205,7 @@
                                         </div>
                                     </div>
                                     <% }); %>
-                                </div>
+                                
                                 <% })
                     .catch((error) => {
                         console.error("API isteği başarısız oldu:", error);
@@ -247,7 +243,6 @@
         </nav>
     </footer>
     <script src="../javascripts/script.js"></script>
-    <script src="../javascripts/github-api.js"></script>
 </body>
 
 </html>
