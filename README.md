@@ -44,3 +44,7 @@ Bu proje, kendi portföy web sitenizi oluşturmanıza yardımcı olacak basit bi
 - EJS (Embedded JavaScript) şablon motoru
 - CSS
 - Node.js
+
+## Kullanılan Api
+
+- Github API 
