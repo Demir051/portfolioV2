@@ -8,9 +8,15 @@
         flex-wrap: wrap;
     }
 
-    #contact,
+
     #projects {
+        height:  fit-content;
+        position: relative;
+    }
+
+    #contact {
         height: fit-content;
+        position: relative;
     }
 }
 
