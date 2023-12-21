@@ -24,13 +24,18 @@ Bu proje, kendi portföy web sitenizi oluşturmanıza yardımcı olacak basit bi
 
 4. `.env` dosyası oluşturun ve GitHub token'ınızı ve diğer çevresel değişkenleri ekleyin.
 
-5. Uygulamayı başlatın:
+    ```bash
+    GITHUB_TOKEN="enter githup token here"
+    PORT=3100
+    ```
+
+6. Uygulamayı başlatın:
 
     ```bash
     npm start
     ```
 
-6. Tarayıcınızda [http://localhost:3100](http://localhost:3100) adresine gidin.
+7. Tarayıcınızda [http://localhost:3100](http://localhost:3100) adresine gidin.
 
 ## Proje Yapısı
 
